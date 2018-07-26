@@ -1,0 +1,643 @@
+.tiger{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #27b484;
+}
+.tiger-content{
+	position: absolute;
+	top: 1rem;
+	left: 1rem;
+	bottom: 1rem;
+	right: 1rem;
+	z-index: 1;
+	background: url(../../images/tiger/back.png) no-repeat center center;
+	background-size: 100% 100%;
+}
+.tiger-prize100{
+	position: absolute;
+	z-index: 2;
+	top: -1rem;
+	left: 50%;
+	width: 38.785714285714285rem;
+	height: 11.5rem;
+	margin-left: -19.392857142857142rem;
+	background: url(../../images/tiger/prize100.png) no-repeat center center;
+	background-size: 100% 100%;
+}
+.tiger-box{
+	position: absolute;
+	top: 9.285714285714286rem;
+	left: 19.57142857142857rem;
+	bottom: 12rem;
+	right: 18.857142857142858rem;
+	z-index: 3;
+}
+.tiger-header{
+	position: absolute;
+	top: 1.7142857142857142rem;
+	left: 4.571428571428571rem;
+	right: 5.071428571428571rem;
+	height: 8.214285714285714rem;
+	background: url(../../images/tiger/title-back.png) no-repeat;
+	background-size: 100% 100%;
+	z-index: 4;
+}
+.tiger-header-title{
+	position: absolute;
+	top: -3.285714285714286rem;
+	left: 50%;
+	width: 74.71428571428571rem;
+	height: 12.28571428571429rem;
+	margin-left: -37.357142857142854rem;
+	background: url(../../images/tiger/title.png) no-repeat;
+	background-size: 100% 100%;
+	z-index: 5;
+}
+.tiger-body{
+	position: absolute;
+	top: 11.642857142857142rem;
+	bottom: 1.7142857142857142rem;
+	left: 4.571428571428571rem;
+	right: 5.071428571428571rem;
+	background: #d93d3d;
+	background: -webkit-radial-gradient(#d93d3d, #d93d3d,#d93d3d, #a62c2c); /* Safari 5.1 - 6.0 */
+    background: -o-radial-gradient(#d93d3d, #d93d3d, #d93d3d,#a62c2c); /* Opera 11.6 - 12.0 */
+    background: -moz-radial-gradient(#d93d3d, #d93d3d, #d93d3d,#a62c2c); /* Firefox 3.6 - 15 */
+    background: radial-gradient(#d93d3d, #d93d3d, #d93d3d,#a62c2c); /* 标准的语法（必须放在最后） */
+	border-radius: 20px;
+	z-index: 4;
+}
+.tiger-body-box{
+	position: absolute;
+	top: 5.285714285714286rem;
+	bottom: 4.857142857142857rem;
+	left: 5.214285714285714rem;
+	right: 5.714285714285714rem;
+	overflow: hidden;
+	background: #fff;
+	border-radius: 20px;
+	box-sizing: border-box;
+	/*border: 0.7142857142857143rem solid #231815;*/
+	background: #231815;
+	z-index: 5;
+}
+.box{
+	position: absolute;
+    top: 1rem;
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #fff;
+}
+.num-con{
+	position: relative;
+	width: 100%;
+}
+.num-img .item{
+	position: relative;
+   	background: -webkit-linear-gradient(#b2b3b3, #fff,#b2b3b3); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(#b2b3b3, #fff,#b2b3b3); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#b2b3b3, #fff,#b2b3b3); /* Firefox 3.6 - 15 */
+    background: linear-gradient(#b2b3b3, #fff,#b2b3b3); /* 标准的语法（必须放在最后） */
+	width: 100%;
+	height: 443px;
+	text-align: center;
+	font-size: 100px;
+	padding: 0 5rem;
+}
+.num-img .item:after{
+	height: 100%;
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+}
+.num-img .item img{
+	max-width: 100%;
+}
+.play-btn {
+	position: absolute;
+    bottom: 1.5rem;
+    right: 0;
+    left: 0;
+   	width: 20.64285714285714rem;
+    height: 11.85714285714286rem;
+    background: url(../../images/tiger/play-btn.png) no-repeat center center;
+    background-size: 100% 100%;
+ 	cursor: pointer;
+    margin: auto;
+    transition: all 200ms;
+    -webkit-transition: all 200ms;
+    -o-transition: all 200ms;
+    -moz-transition: all 200ms;
+}
+.play-btn.active {
+    background-image: url(../../images/tiger/play-btn-active.png);
+    background-size: 20.64285714285714rem 8.85714285714286rem;
+    background-position: center bottom;
+}
+.tiger-footer-stall-back{
+    position: absolute;
+    bottom: 4rem;
+    right: 28.857142857142858rem;
+   	width: 13.21428571428571rem;
+    height: 2.428571428571429rem;
+    border-radius: 6rem 11rem 6rem 10rem;
+    background: #000000 ;
+    border:3px solid #c69602;
+}
+.tiger-footer-stall-back:after{
+	content: "";
+	display: block;
+	position: absolute;
+	bottom: 0;
+	top: 8px;
+	left: 15px;
+	right: 15px;
+	z-index: 11;
+	background: #000;
+}
+.tiger-footer-stall{
+	position: absolute;
+	left: -2.5rem;
+	bottom: 0rem;
+	width: 9.357142857142857rem;
+	height: 11.42857142857143rem;
+	z-index: 10;
+	background: url(../../images/tiger/tiger-footer-stall.png) no-repeat center center;
+    background-size: 100% 100%;
+    transform: rotatez(0deg) ;
+    transform-origin:100% 100%;
+    transition-duration: 0.2s;
+}
+.tiger-footer-stall.active{
+	transform: rotatez(60deg);
+}
+.tiger-body-top{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 5.285714285714286rem;
+	line-height: 7rem;
+	text-align: center;
+	overflow: hidden;
+}
+.tiger-body-left{
+	position: absolute;
+	top: 5.285714285714286rem;
+	left: 0;
+	bottom: 4.857142857142857rem;
+	width: 5.214285714285714rem;
+	line-height: 10.5rem;
+	text-align: center;
+	overflow: hidden;
+}
+.tiger-body-right{
+	position: absolute;
+	top: 5.285714285714286rem;
+	right: 0;
+	bottom: 4.857142857142857rem;
+	width: 5.714285714285714rem;
+	line-height: 10.5rem;
+	text-align: center;
+	overflow: hidden;
+}
+.tiger-body-bottom{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 4.857142857142857rem;
+	line-height: 6rem;
+	text-align: center;
+	overflow: hidden;
+}
+.tiger-body-bottom .ball,.tiger-body-top .ball,.tiger-body-left .ball,.tiger-body-right .ball{
+	display: inline-block;
+	width:2.571428571428571rem;
+	height: 2.571428571428571rem;
+	border-radius: 50%;
+	background: -webkit-radial-gradient(50% 40%, circle, #fffbe9, #f343ff);
+  	background: -moz-radial-gradient(50% 40%, circle, #fffbe9, #f343ff);
+  	background: radial-gradient(50% 40%, circle, #fffbe9, #f343ff);
+  	box-shadow: 5px 5px 100px rgba(0,0,0,0.3);
+  	margin-right: 6rem;
+}
+.tiger-body-bottom .ball:last-of-type,.tiger-body-top .ball:last-of-type{
+	margin-right: 0;
+}
+.tiger-body-left .ball,.tiger-body-right .ball{
+	margin: 0 1rem;
+}
+
+.tiger-body .ball:nth-of-type(odd).active{
+	-webkit-animation: content-lamp 0.5s ease-in-out both infinite;
+  	animation: content-lamp 0.5s ease-in-out both infinite;
+  	-webkit-animation-delay: -0.28571s;
+  	animation-delay: -0.28571s;
+	/*-webkit-animation: content-lamp 0.5s infinite;
+  	animation: content-lamp 0.5s infinite;*/
+}
+.tiger-body .ball:nth-of-type(even).active{
+	-webkit-animation: content-lamp 0.5s ease-in-out both infinite;
+  	animation: content-lamp 0.5s ease-in-out both infinite;
+  	-webkit-animation-delay: -0.57143s;
+    animation-delay: -0.57143s;
+	/*-webkit-animation: content-lamp 1s infinite;
+  	animation: content-lamp 1s infinite;*/
+}
+
+/*展示奖品*/
+.prize{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.9) url(../../images/tiger/prize.png) no-repeat center center;
+	background-size: 100% 100%;
+	transform: scale(0,0);
+}
+.prize.active{
+	animation: prize-dialog 2s;
+	-webkit-animation: prize-dialog 2s;
+	-moz-animation: prize-dialog 2s;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+}
+.prize-close{
+	position: absolute;
+	top: 50px;
+	right: 50px;
+	background: rgba(255,255,255,0.2);
+	border-radius: 10px;
+	padding: 10px;
+	color: #fff;
+	font-size: 25px;
+	font-weight: bold;
+}
+.prize-dialog{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 1001;
+	margin-top: -255px;
+	margin-left: -443px;
+	width: 886px;
+	height: 510px;
+}
+.prize-title{
+	position: absolute;
+	top: 0;
+	left: 50%;
+	z-index: 1003;
+	margin-left: -405px;
+	width: 810px;
+	height: 127px;
+	background: url(../../images/tiger/title.png) no-repeat center center;
+	background-size: 100% 100%;
+}
+.prize-content{
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	z-index: 1002;
+	margin-left: -443px;
+	width: 886px;
+	height: 442px;
+	background: url(../../images/tiger/prize-content.png) no-repeat center center;
+	background-size: 100% 100%;
+}
+.prize-content .prize-box{
+	position: absolute;
+	bottom: 25px;
+	left: 50%;
+	margin-left: -305px;
+	width: 610px;
+	height: 357px;
+}
+.prize-content .prize-box.prize1{
+	background: url(../../images/tiger/prize1.png) no-repeat center center;
+	background-size: 100%;
+	animation: prize1 2.5s;
+	-webkit-animation: prize1 2.5s;
+	-ms-animation: prize1 2.5s;
+	-o-animation: prize1 2.5s;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	-ms-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+}
+.prize-content .prize-box.prize2{
+	background: url(../../images/tiger/prize2.png) no-repeat center center;
+	background-size: 100%;
+	animation: prize3 2.5s;
+	-webkit-animation: prize3 2.5s;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+.prize-content .prize-box.prize3{
+	background: url(../../images/tiger/prize3.png) no-repeat center center;
+	background-size: 100%;
+	animation: prize5 2.5s;
+	-webkit-animation: prize5 2.5s;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+.prize-content .prize-box.prize4{
+	background: url(../../images/tiger/prize4.png) no-repeat center center;
+	background-size: 100%;
+	animation: prize2 2.5s;
+	-webkit-animation: prize2 2.5s;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+.prize-content .prize-box.prize5{
+	background: url(../../images/tiger/prize5.png) no-repeat center center;
+	background-size: 100%;
+	animation: prize3 2.5s;
+	-webkit-animation: prize3 2.5s;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+.prize-content .prize-box.prize6{
+	background: url(../../images/tiger/prize6.png) no-repeat center center;
+	background-size: 100%;
+	animation: prize4 2.5s;
+	-webkit-animation: prize4 2.5s;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+.prize-content .prize-box.prize7{
+	background: url(../../images/tiger/prize7.png) no-repeat center center;
+	background-size: 100%;
+	animation: prize5 2.5s;
+	-webkit-animation: prize5 2.5s;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+.prize-content .prize-box.prize8{
+	background: url(../../images/tiger/prize8.png) no-repeat center center;
+	background-size: 100%;
+	animation: prize3 2.5s;
+	-webkit-animation: prize3 2.5s;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+.prize-content .prize-box.prize9{
+	background: url(../../images/tiger/prize9.png) no-repeat center center;
+	background-size: 100%;
+	animation: prize2 2.5s;
+	-webkit-animation: prize2 2.5s;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+@keyframes content-lamp {
+  0% {
+  	background: -webkit-radial-gradient(50% 40%, circle, #fffbe9, #f343ff);
+  	background: -moz-radial-gradient(50% 40%, circle, #fffbe9, #f343ff);
+  	background: radial-gradient(50% 40%, circle, #fffbe9, #f343ff);
+  	box-shadow: 5px 5px 100px rgba(0,0,0,0.3);
+  }
+
+  25% {
+    background: -webkit-radial-gradient(50% 40%, circle, #fffbe9, #f343ff);
+  	background: -moz-radial-gradient(50% 40%, circle, #fffbe9, #f343ff);
+  	background: radial-gradient(50% 40%, circle, #fffbe9, #f343ff);
+  	box-shadow: 5px 5px 100px rgba(0,0,0,0.3);
+  }
+
+  50% {
+    background: -webkit-radial-gradient(50% 40%, circle, #fffff4, #f7e2ab);
+  	background: -moz-radial-gradient(50% 40%, circle, #fffff4, #f7e2ab);
+  	background: radial-gradient(50% 40%, circle, #fffff4, #f7e2ab);
+  	box-shadow: 10px 10px 100px #f7e2ab;
+  }
+
+  75% {
+    background: -webkit-radial-gradient(50% 40%, circle, #fffff4, #f7e2ab);
+  	background: -moz-radial-gradient(50% 40%, circle, #fffff4, #f7e2ab);
+  	background: radial-gradient(50% 40%, circle, #fffff4, #f7e2ab);
+  	box-shadow: 10px 10px 100px #f7e2ab;
+  }
+
+  100% {
+    background: -webkit-radial-gradient(50% 40%, circle, #fffff4, #f7e2ab);
+  	background: -moz-radial-gradient(50% 40%, circle, #fffff4, #f7e2ab);
+  	background: radial-gradient(50% 40%, circle, #fffff4, #f7e2ab);
+  	box-shadow: 10px 10px 100px #f7e2ab;
+  }
+}
+/*展示奖品*/
+@keyframes prize-dialog{
+	0%{
+		transform: perspective(600px) rotateY(-360deg) scale(0);
+		-moz-transform: perspective(600px) rotateY(-360deg) scale(0);
+		-webkit-transform: perspective(600px) rotateY(-360deg) scale(0);
+	}
+	100%{
+		transform: perspective(600px) rotateZ(0deg) scale(1);
+		-moz-transform: perspective(600px) rotateZ(0deg) scale(1);
+		-webkit-transform: perspective(600px) rotateZ(0deg) scale(1);
+	}
+}
+@-moz-keyframes prize-dialog{
+	0%{
+		transform: perspective(600px) rotateY(-360deg) scale(0);
+		-moz-transform: perspective(600px) rotateY(-360deg) scale(0);
+		-webkit-transform: perspective(600px) rotateY(-360deg) scale(0);
+	}
+	100%{
+		transform: perspective(600px) rotateZ(0deg) scale(1);
+		-moz-transform: perspective(600px) rotateZ(0deg) scale(1);
+		-webkit-transform: perspective(600px) rotateZ(0deg) scale(1);
+	}
+}
+@-webkit-keyframes prize-dialog{
+	0%{
+		transform: perspective(600px) rotateZ(-360deg) scale(0);
+		-moz-transform: perspective(600px) rotateZ(-360deg) scale(0);
+		-webkit-transform: perspective(600px) rotateZ(-360deg) scale(0);
+	}
+	100%{
+		transform: perspective(600px) rotate(0deg) scale(1);
+		-moz-transform: perspective(600px) rotate(0deg) scale(1);
+		-webkit-transform: perspective(600px) rotate(0deg) scale(1);
+	}
+}
+@keyframes prize1{
+	0%{
+		transform: perspective(600px) rotateZ(130deg) scale(0) translateZ(250px);
+		-webkit-transform: perspective(600px) rotateZ(130deg) scale(0) translateZ(250px);
+	}
+	100%{
+		transform: perspective(600px) rotate(0deg) scale(1) translateX(0);
+		-webkit-transform: perspective(600px) rotate(0deg) scale(1) translateX(0);
+	}
+}
+@-webkit-keyframes prize1{
+	0%{
+		transform: perspective(600px) rotateZ(130deg) scale(0) translateZ(250px);
+		-webkit-transform: perspective(600px) rotateZ(130deg) scale(0) translateZ(250px);
+	}
+	100%{
+		transform: perspective(600px) rotate(0deg) scale(1) translateX(0);
+		-webkit-transform: perspective(600px) rotate(0deg) scale(1) translateX(0);
+	}
+}
+@keyframes prize2{
+	0%{
+		transform: perspective(600px) rotateZ(360deg) scale(0);
+		-webkit-transform: perspective(600px) rotateZ(360deg) scale(0);
+	}
+	100%{
+		transform: perspective(600px) rotate(0deg) scale(1);
+		-webkit-transform: perspective(600px) rotate(0deg) scale(1);
+	}
+}
+@-webkit-keyframes prize2{
+	0%{
+		transform: perspective(600px) rotateZ(360deg) scale(0);
+		-webkit-transform: perspective(600px) rotateZ(360deg) scale(0);
+	}
+	100%{
+		transform: perspective(600px) rotate(0deg) scale(1);
+		-webkit-transform: perspective(600px) rotate(0deg) scale(1);
+	}
+}
+@keyframes prize3{
+	0%{
+		transform: perspective(600px) rotateY(360deg) scale(0);
+		-webkit-transform: perspective(600px) rotateY(360deg) scale(0);
+	}
+	100%{
+		transform: perspective(600px) rotate(0deg) scale(1);
+		-webkit-transform: perspective(600px) rotate(0deg) scale(1);
+	}
+}
+@-webkit-keyframes prize3{
+	0%{
+		transform: perspective(600px) rotateY(360deg) scale(0);
+		-webkit-transform: perspective(600px) rotateY(360deg) scale(0);
+	}
+	100%{
+		transform: perspective(600px) rotate(0deg) scale(1);
+		-webkit-transform: perspective(600px) rotate(0deg) scale(1);
+	}
+}
+@-webkit-keyframes prize4{
+	0%{
+		transform: perspective(600px) rotateZ(-360deg) scale(0);
+		-webkit-transform: perspective(600px) rotateZ(-360deg) scale(0);
+	}
+	100%{
+		transform: perspective(600px) rotate(0deg) scale(1);
+		-webkit-transform: perspective(600px) rotate(0deg) scale(1);
+	}
+}
+@keyframes prize4{
+	0%{
+		transform: perspective(600px) rotateZ(-360deg) scale(0);
+		-webkit-transform: perspective(600px) rotateZ(-360deg) scale(0);
+	}
+	100%{
+		transform: perspective(600px) rotate(0deg) scale(1);
+		-webkit-transform: perspective(600px) rotate(0deg) scale(1);
+	}
+}
+@keyframes prize5{
+	0%{
+		transform: perspective(600px) rotateY(200deg) scale(0);
+		-webkit-transform: perspective(600px) rotateY(200deg) scale(0);
+	}
+	100%{
+		transform: perspective(600px) rotate(0deg) scale(1);
+		-webkit-transform: perspective(600px) rotate(0deg) scale(1);
+	}
+}
+@-webkit-keyframes prize5{
+	0%{
+		transform: perspective(600px) rotateY(200deg) scale(0);
+		-webkit-transform: perspective(600px) rotateY(200deg) scale(0);
+	}
+	100%{
+		transform: perspective(600px) rotate(0deg) scale(1);
+		-webkit-transform: perspective(600px) rotate(0deg) scale(1);
+	}
+}
+/*弹框背景*/
+@keyframes scale-loading {
+	0% {
+		-webkit-transform: scale(0,0);
+		transform: scale(0,0);
+	}
+	25% {
+		-webkit-transform: scale(0.25,0.25);
+		transform: scale(0.25,0.25);
+	}
+	50% {
+		-webkit-transform: scale(0.5,0.5);
+		transform: scale(0.5,0.5);
+	}
+	75% {
+		-webkit-transform: scale(0.75,0.75);
+		transform: scale(0.75,0.75);
+	}
+	100% {
+		-webkit-transform: scale(1,1);
+		transform: scale(1,1);
+	}
+}
+@-webkit-keyframes scale-loading {
+	0% {
+		-webkit-transform: scale(0,0);
+		transform: scale(0,0);
+	}
+	25% {
+		-webkit-transform: scale(0.25,0.25);
+		transform: scale(0.25,0.25);
+	}
+	50% {
+		-webkit-transform: scale(0.5,0.5);
+		transform: scale(0.5,0.5);
+	}
+	75% {
+		-webkit-transform: scale(0.75,0.75);
+		transform: scale(0.75,0.75);
+	}
+	100% {
+		-webkit-transform: scale(1,1);
+		transform: scale(1,1);
+	}
+}
+
+/* 小屏幕（大于等于 1280px） */
+@media (min-width: 12px) { 
+	body,html{
+		font-size: 8px;
+	}
+}
+
+/* 中等屏幕（桌面显示器，大于等于 1400px） */
+@media (min-width: 1400px) {
+	body,html{
+		font-size: 10px;
+	}
+}
+
+/* 大屏幕（大桌面显示器，大于等于 1600px） */
+@media (min-width: 1600) {
+	body,html{
+		font-size: 14px;
+	}
+}
+#queryFrom .msg,#queryFrom .col-sm-6{
+	font-size: 14px;
+}

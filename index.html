@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <meta name="format-detection"content="telephone=no, email=no" />
+        <meta name="apple-mobile-web-app-capable" content="yes" /><!-- 删除苹果默认的工具栏和菜单栏 -->
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" /><!-- 设置苹果工具栏颜色 -->
+        <meta name="format-detection" content="telphone=no, email=no" /><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+        <!-- 启用360浏览器的极速模式(webkit) -->
+        <meta name="renderer" content="webkit">
+        <!-- 避免IE使用兼容模式 -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+        <meta name="HandheldFriendly" content="true">
+        <!-- 微软的老式浏览器 -->
+        <meta name="MobileOptimized" content="320">
+        <!-- uc强制竖屏 -->
+        <meta name="screen-orientation" content="portrait">
+        <!-- QQ强制竖屏 -->
+        <meta name="x5-orientation" content="portrait">
+        <!-- UC强制全屏 -->
+        <meta name="full-screen" content="yes">
+        <!-- QQ强制全屏 -->
+        <meta name="x5-fullscreen" content="true">
+        <!-- UC应用模式 -->
+        <meta name="browsermode" content="application">
+        <!-- QQ应用模式 -->
+        <meta name="x5-page-mode" content="app">
+        <!-- windows phone 点击无高光 -->
+        <meta name="msapplication-tap-highlight" content="no">
+        <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+        <!--[if lt IE 9]>
+        <script type="text/javascript" src="./assets/javascripts/core/bootstrap/respond.min.js"></script>
+        <script type="text/javascript" src="./assets/javascripts/core/bootstrap/html5shiv.min.js"></script>
+        <![endif]-->
+        <link rel="stylesheet" href="assets/css/index/index.css" />
+    </head>
+    <body onselectstart = "return false">
+    	<div class="tiger">
+    		<div class="tiger-content">
+    			<div class="tiger-prize100"></div>
+    			<div class="tiger-box">
+    				<div class="tiger-header">
+	    				<div class="tiger-header-title"></div>
+	    			</div>
+	    			<div class="tiger-body">
+	    				<div class="tiger-body-top"></div>
+	    				<div class="tiger-body-right"></div>
+	    				<div class="tiger-body-bottom"></div>
+	    				<div class="tiger-body-left"></div>
+	    				<div class="tiger-body-box">
+	    					<div class="box">
+	    						<div class="num-con num-con2">
+	    							<div id="home-prize" class="num-img">
+		    							<div class="item">
+		    								<img src="assets/images/tiger/prize0.png" />	
+		    							</div>
+		    						</div>
+		    						<div class="num-img">
+		    							<div class="item">
+			    							<img src="assets/images/tiger/prize1.png"/>
+			    						</div>
+			    						<div class="item">
+			    							<img src="assets/images/tiger/prize2.png"/>
+			    						</div>
+			    						<div class="item">
+			    							<img src="assets/images/tiger/prize3.png"/>
+			    						</div>
+			    						<div class="item">
+			    							<img src="assets/images/tiger/prize4.png"/>
+			    						</div>
+			    						<div class="item">
+			    							<img src="assets/images/tiger/prize5.png"/>
+			    						</div>
+			    						<div class="item">
+			    							<img src="assets/images/tiger/prize6.png"/>
+			    						</div>
+			    						<div class="item">
+			    							<img src="assets/images/tiger/prize7.png"/>
+			    						</div>
+			    						<div class="item">
+			    							<img src="assets/images/tiger/prize8.png"/>
+			    						</div>
+			    						<div class="item">
+			    							<img src="assets/images/tiger/prize9.png"/>
+			    						</div>
+			    					</div>
+									<div class="num-img">
+										<div class="item">
+			    							<img src="assets/images/tiger/prize1.png"/>
+			    						</div>
+			    						<div class="item">
+			    							<img src="assets/images/tiger/prize2.png"/>
+			    						</div>
+			    						<div class="item">
+			    							<img src="assets/images/tiger/prize3.png"/>
+			    						</div>
+			    						<div class="item">
+			    							<img src="assets/images/tiger/prize4.png"/>
+			    						</div>
+			    						<div class="item">
+			    							<img src="assets/images/tiger/prize5.png"/>
+			    						</div>
+			    						<div class="item">
+			    							<img src="assets/images/tiger/prize6.png"/>
+			    						</div>
+			    						<div class="item">
+			    							<img src="assets/images/tiger/prize7.png"/>
+			    						</div>
+			    						<div class="item">
+			    							<img src="assets/images/tiger/prize8.png"/>
+			    						</div>
+			    						<div class="item">
+			    							<img src="assets/images/tiger/prize9.png"/>
+			    						</div>
+									</div>	
+		    					</div>
+	    					</div>
+	    				</div>
+	    			</div>
+    			</div>
+    			<div class="tiger-footer">
+    				<div class="play-btn" data-type="jd"></div>
+    				<div class="tiger-footer-stall-back">
+    					<div class="tiger-footer-stall"></div>
+    				</div>
+    			</div>	
+    		</div>
+    		
+    	</div>
+    	<!--展示奖品-->
+		<div class="prize">
+			<div id='cas' style="position: absolute;top: 0;left:0;"></div>
+			<div class="prize-close">3s后继续抽奖</div>
+			<div class="prize-dialog">
+				<div class="prize-title"></div>
+				<div class="prize-content">
+					<div class="prize-box"></div>
+				</div>	
+			</div>
+		</div>
+		<!--模态框-->
+    	<div class="modal bs-example-modal-lg fade" id="myModalQualifications">
+		  <div class="modal-dialog modal-lg" role="document">
+		    <div class="modal-content">
+		      <div class="modal-body">
+		      	<h3 class="title">抽奖资格验证</h3>
+		      	<div class="form-horizontal" id="queryFrom">
+		      		<div class="form-group">
+					    <div class="col-sm-12">
+					      	<input type="text" tabindex="-1" class="form-control" id="receipt" placeholder="请输入或扫描小票">
+					    </div>
+					</div>
+					<div class="form-group msgDiv">
+						<div class="col-sm-12">
+							<div class="msg"></div>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-sm-6">会员姓名：<span class="item name">--</span></div>
+						<div class="col-sm-6">手机号码：<span class="item phone">--</span></div>
+					</div>
+					<div class="form-group">
+						<div class="col-sm-6">小票金额：<span class="item money">--</span></div>
+						<div class="col-sm-6">会员卡号：<span class="item account">--</span></div>
+					</div>
+		      	</div>
+		      </div>
+		      <div class="modal-footer tc">
+		        <button type="button" class="btn btn-info btn-lg" id="query">查询</button>
+		        <button type="button" class="btn btn-default btn-lg" disabled="true" id="luck-draw">抽奖</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+    	<script src="assets/javascripts/core/jquery/jquery.min.js"></script>
+		<script type="text/javascript" src="assets/javascripts/core/bootstrap/bootstrap.js" ></script>
+		<script type="text/javascript" src="assets/javascripts/modules/index/firemaks.js" ></script>
+    	<script type="text/javascript" src="assets/javascripts/modules/index/index.js" ></script>
+    </body>
+</html>
